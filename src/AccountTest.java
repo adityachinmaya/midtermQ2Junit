@@ -38,9 +38,9 @@ public class AccountTest {
 		Account.withdraw(2500);
 		TestResult= Account.deposit(3000);
 		MonthlyInterestResult = Account.getMonthlyInterestRate();
-		System.out.printf("The balance of the account is" , Account.getBalance());
-		System.out.println("The monthly interest of the account is "+(Account.getMonthlyInterestRate()*100));
-		System.out.println("The account was created on "+ Account.getDateCreated());
+		System.out.printf("The balance is" , Account.getBalance());
+		System.out.println("The monthly interest  is "+(Account.getMonthlyInterestRate()*100));
+		System.out.println("created on "+ Account.getDateCreated());
 		//check that the amount withdrawn is what it is supposed to be
 		assertEquals(20500,TestResult,0);
 		assertEquals(.00375,MonthlyInterestResult, .001);
